@@ -137,34 +137,32 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Sales Invoice": {
+		"on_submit": "befree_app.overrides.sales_invoice.sales_invoice_validation",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"befree_app.tasks.all"
-# 	],
-# 	"daily": [
-# 		"befree_app.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"befree_app.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"befree_app.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"befree_app.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"befree_app.tasks.all"
+	# ],
+	"daily": [
+        "befree_app.scheduler.customer.send_welcome_message_to_new_customer"
+	],
+	# "hourly": [
+	# 	"befree_app.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"befree_app.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"befree_app.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------

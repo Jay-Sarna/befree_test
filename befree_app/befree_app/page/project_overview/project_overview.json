@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2026-02-19 19:44:42.116369",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-02-19 19:46:08.280502",
+ "modified_by": "Administrator",
+ "module": "Befree App",
+ "name": "project-overview",
+ "owner": "Administrator",
+ "page_name": "project-overview",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Project overview"
+}
